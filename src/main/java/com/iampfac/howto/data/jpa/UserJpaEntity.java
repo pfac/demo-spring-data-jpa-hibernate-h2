@@ -6,6 +6,8 @@ import javax.persistence.Id;
 
 import org.apache.commons.lang3.StringUtils;
 
+import com.iampfac.howto.core.user.User;
+
 @Entity
 public class UserJpaEntity {
 
@@ -21,6 +23,12 @@ public class UserJpaEntity {
 	public UserJpaEntity(final String firstname, final String lastname) {
 		this.firstname = firstname;
 		this.lastname = lastname;
+	}
+
+	public UserJpaEntity(final User user) {
+		this.id = user.getId();
+		this.firstname = user.getFirstName();
+		this.lastname = user.getLastName();
 	}
 
 	// getters
@@ -68,5 +76,15 @@ public class UserJpaEntity {
 			return equals((UserJpaEntity) obj);
 		}
 		return false;
+	}
+	
+	// type conversion
+	
+	public User toUser() {
+		User user = new User();
+		user.setId(id);
+		user.setFirstName(firstname);
+		user.setLastName(lastname);
+		return user;
 	}
 }

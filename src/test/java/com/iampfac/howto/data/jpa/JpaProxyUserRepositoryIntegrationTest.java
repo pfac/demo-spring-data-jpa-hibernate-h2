@@ -15,24 +15,25 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.iampfac.howto.config.ApplicationConfiguration;
+import com.iampfac.howto.core.user.User;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = ApplicationConfiguration.class)
 @DirtiesContext(classMode = ClassMode.AFTER_CLASS)
-public class UserJpaRepositoryIntegrationTest {
+public class JpaProxyUserRepositoryIntegrationTest {
 
 	@Autowired
-	private UserJpaRepository	repository;
+	private JpaProxyUserRepository repository;
 
 	@Test
 	public void sampleTestCase() {
-		UserJpaEntity dave = new UserJpaEntity("Dave", "Mathews");
+		User dave = new User("Dave", "Mathews");
 		dave = repository.save(dave);
 
-		UserJpaEntity carter = new UserJpaEntity("Carter", "Beauford");
+		User carter = new User("Carter", "Beauford");
 		carter = repository.save(carter);
 
-		List<UserJpaEntity> users = repository.findAll();
+		List<User> users = repository.all();
 		assertThat(users.size(), is(2));
 		assertThat(users, hasItem(dave));
 		assertThat(users, hasItem(carter));
