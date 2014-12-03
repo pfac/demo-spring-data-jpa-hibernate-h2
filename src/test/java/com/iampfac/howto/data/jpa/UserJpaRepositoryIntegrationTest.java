@@ -16,20 +16,20 @@ import com.iampfac.howto.config.ApplicationConfiguration;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = ApplicationConfiguration.class)
-public class UserRepositoryIntegrationTest {
+public class UserJpaRepositoryIntegrationTest {
 
 	@Autowired
-	private UserRepository	repository;
+	private UserJpaRepository	repository;
 
 	@Test
 	public void sampleTestCase() {
-		User dave = new User("Dave", "Mathews");
+		UserJpaEntity dave = new UserJpaEntity("Dave", "Mathews");
 		dave = repository.save(dave);
 
-		User carter = new User("Carter", "Beauford");
+		UserJpaEntity carter = new UserJpaEntity("Carter", "Beauford");
 		carter = repository.save(carter);
 
-		List<User> users = repository.findAll();
+		List<UserJpaEntity> users = repository.findAll();
 		assertThat(users.size(), is(2));
 		assertThat(users, hasItem(dave));
 		assertThat(users, hasItem(carter));

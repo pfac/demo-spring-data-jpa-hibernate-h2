@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import org.apache.commons.lang3.StringUtils;
 
 @Entity
-public class User {
+public class UserJpaEntity {
 
 	@Id
 	@GeneratedValue
@@ -15,10 +15,10 @@ public class User {
 	private String	firstname;
 	private String	lastname;
 
-	public User() {
+	public UserJpaEntity() {
 	}
 
-	public User(final String firstname, final String lastname) {
+	public UserJpaEntity(final String firstname, final String lastname) {
 		this.firstname = firstname;
 		this.lastname = lastname;
 	}
@@ -53,7 +53,7 @@ public class User {
 
 	// overrides
 
-	public boolean equals(User user) {
+	public boolean equals(UserJpaEntity user) {
 		return getId() == user.getId()
 				&& StringUtils.equals(getFirstname(), user.getFirstname())
 				&& StringUtils.equals(getLastname(), user.getLastname());
@@ -64,8 +64,8 @@ public class User {
 		if (obj == this) {
 			return true;
 		}
-		if (obj != null && obj instanceof User) {
-			return equals((User) obj);
+		if (obj != null && obj instanceof UserJpaEntity) {
+			return equals((UserJpaEntity) obj);
 		}
 		return false;
 	}
