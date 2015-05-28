@@ -1,1 +1,6 @@
 target/
+
+# Eclipse generated artifacts
+.classpath
+.project
+.settings/
