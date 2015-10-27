@@ -1,7 +1,7 @@
-HowTo: Spring Data + JPA + Hibernate 4 + H2
+Demo: Spring Data + JPA + Hibernate + H2
 ===========================================
 
-[![Build Status](https://travis-ci.org/pfac/howto-springdata-jpa-hibernate4-h2.svg?branch=master)](https://travis-ci.org/pfac/howto-springdata-jpa-hibernate4-h2) [![Dependency Status](https://www.versioneye.com/user/projects/547e64e36c4767532d0002d3/badge.svg?style=flat)](https://www.versioneye.com/user/projects/547e64e36c4767532d0002d3)
+[![Build Status](https://travis-ci.org/pfac/demo-spring-data-jpa-hibernate-h2.svg?branch=master)](https://travis-ci.org/pfac/demo-spring-data-jpa-hibernate-h2) [![Dependency Status](https://www.versioneye.com/user/projects/562f977136d0ab001600187d/badge.svg?style=flat)](https://www.versioneye.com/user/projects/562f977136d0ab001600187d)
 
 Based on the README of [spring-data-jpa][1], but with the complete configuration required for the example to work.
 

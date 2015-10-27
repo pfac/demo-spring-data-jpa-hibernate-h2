@@ -1,4 +1,4 @@
-package com.iampfac.howto.data.jpa;
+package com.iampfac.demo.data.jpa;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

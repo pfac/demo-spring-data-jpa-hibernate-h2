@@ -1,4 +1,4 @@
-package com.iampfac.howto.core.user;
+package com.iampfac.demo.core.user;
 
 import org.apache.commons.lang3.StringUtils;
 

@@ -1,4 +1,4 @@
-package com.iampfac.howto.data.jpa;
+package com.iampfac.demo.data.jpa;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,8 +6,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.iampfac.howto.core.user.User;
-import com.iampfac.howto.core.user.UserRepository;
+import com.iampfac.demo.core.user.User;
+import com.iampfac.demo.core.user.UserRepository;
 
 @Repository
 public class JpaProxyUserRepository implements UserRepository {

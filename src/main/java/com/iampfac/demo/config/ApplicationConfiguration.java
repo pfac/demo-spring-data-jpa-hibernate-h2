@@ -1,4 +1,4 @@
-package com.iampfac.howto.config;
+package com.iampfac.demo.config;
 
 import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
@@ -16,8 +16,8 @@ import org.springframework.orm.jpa.vendor.Database;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 
 @Configuration
-@ComponentScan("com.iampfac.howto")
-@EnableJpaRepositories("com.iampfac.howto.data.jpa")
+@ComponentScan("com.iampfac.demo")
+@EnableJpaRepositories("com.iampfac.demo.data.jpa")
 public class ApplicationConfiguration {
 
 	@Bean
@@ -39,7 +39,7 @@ public class ApplicationConfiguration {
 		LocalContainerEntityManagerFactoryBean bean = new LocalContainerEntityManagerFactoryBean();
 		bean.setDataSource(dataSource);
 		bean.setJpaVendorAdapter(jpaVendorAdapter);
-		bean.setPackagesToScan("com.iampfac.howto.data");
+		bean.setPackagesToScan("com.iampfac.demo.data");
 		return bean;
 	}
 

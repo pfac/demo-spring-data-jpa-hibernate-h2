@@ -1,4 +1,4 @@
-package com.iampfac.howto.data.jpa;
+package com.iampfac.demo.data.jpa;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -6,7 +6,7 @@ import javax.persistence.Id;
 
 import org.apache.commons.lang3.StringUtils;
 
-import com.iampfac.howto.core.user.User;
+import com.iampfac.demo.core.user.User;
 
 @Entity
 public class UserJpaEntity {

@@ -1,4 +1,4 @@
-package com.iampfac.howto.data.jpa;
+package com.iampfac.demo.data.jpa;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
@@ -14,7 +14,9 @@ import org.springframework.test.annotation.DirtiesContext.ClassMode;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.iampfac.howto.config.ApplicationConfiguration;
+import com.iampfac.demo.config.ApplicationConfiguration;
+import com.iampfac.demo.data.jpa.UserJpaEntity;
+import com.iampfac.demo.data.jpa.UserJpaRepository;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = ApplicationConfiguration.class)
