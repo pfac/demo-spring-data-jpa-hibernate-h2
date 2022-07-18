@@ -1,7 +1,9 @@
 Demo: Spring Data + JPA + Hibernate + H2
-===========================================
+========================================
 
-[![Build Status](https://travis-ci.org/pfac/demo-spring-data-jpa-hibernate-h2.svg?branch=master)](https://travis-ci.org/pfac/demo-spring-data-jpa-hibernate-h2) [![Dependency Status](https://www.versioneye.com/user/projects/562f977136d0ab001600187d/badge.svg?style=flat)](https://www.versioneye.com/user/projects/562f977136d0ab001600187d)
+> _**This project is now retired**._
+>
+> _I created this project back in 2014 to be a reference for me and the community. I have long since stopped working with Java in general and Spring in particular._
 
 Based on the README of [spring-data-jpa][1], but with the complete configuration required for the example to work.
 
